@@ -1,0 +1,74 @@
+.mobile-only {
+  display: none;
+}
+
+html, body {
+  height: 100vh;
+}
+
+main {
+  height: 100vh;
+
+  grid-template-columns: 9% 22.6% 8% 60.4%;
+  grid-template-rows: 11.4% /* coming-soon */ 7.6%
+  9% 9% /* logo */ 3.2%
+  4% /* stream-your-brand */ 2.6%
+  6.6% /* description */ 1.8%
+  16% 2% /* possible */ 2.7%
+  6.5% /* meet-us */
+  17.6%;
+}
+
+.coming-soon,
+.adte-logo,
+.stream-your-brand,
+.description,
+.possible-badge,
+.meet-us {
+  grid-column: 2 / 2;
+  text-align: center;
+}
+
+.coming-soon {
+  grid-row: 0 / 1;
+}
+
+.adte-logo {
+  grid-row: 3 / 5;
+}
+
+.stream-your-brand {
+  grid-row: 6 / 7
+}
+
+.description {
+  grid-row: 8 / 9;
+}
+
+.possible-badge {
+  grid-row: 10 / 12;
+}
+
+.meet-us {
+  grid-row: 13 / 14;
+}
+
+.video-wrapper {
+  grid-column: 4 / 5;
+  grid-row: 4 / 11;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-wrapper img {
+  max-width: none;
+}
+
+.video {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45.3vh;
+  border-radius: 6px;
+}

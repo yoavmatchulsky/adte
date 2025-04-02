@@ -1,0 +1,59 @@
+.desktop-only {
+  display: none;
+}
+
+main {
+  /* height: 1000px; */
+  /* height: auto; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90px 113px 13.8px 21.5px 33.7px 118px 24.8px 61px 68.6px 386px;
+  text-align: center;
+}
+
+.coming-soon {
+  grid-row: 1 / 2;
+}
+
+.coming-soon img {
+  transform: translateX(50%);
+
+}
+
+.adte-logo {
+  grid-row: 2 / 3;
+}
+
+.stream-your-brand {
+  grid-row: 4 / 5;
+}
+
+.possible-badge {
+  grid-row: 6 / 7;
+}
+
+.meet-us {
+  grid-row: 8 / 9;
+}
+
+.video-wrapper {
+  grid-row: 10 / 11;
+  position: relative;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  overflow: hidden;
+  height: 150px;
+}
+
+video {
+  position: relative;
+  height: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
