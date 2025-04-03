@@ -56,7 +56,7 @@ main {
 
 video {
   position: relative;
-  height: 97px;
+  height: 261px;
   left: 50%;
   transform: translateX(-50%);
 }
