@@ -10,8 +10,8 @@ main {
   height: 100vh;
   grid-template-columns: 9% 22.6% 8% 60.4%;
   grid-template-rows:
-    11.4% /* coming-soon */ 7.6%
-    9% 9% /* logo */ 3.2%
+    11.4% /* coming-soon */ 8.1%
+    7% 7.9% /* logo */
     4% /* stream-your-brand */ 2.6%
     6.6% /* description */ 1.8%
     16% 2% /* possible */ 2.7%
@@ -40,23 +40,23 @@ main {
 }
 
 .stream-your-brand {
-  grid-row: 6 / 7
+  grid-row: 5 / 6;
 }
 
 .description {
-  grid-row: 8 / 9;
+  grid-row: 7 / 8;
 }
 
 .possible-badge {
-  grid-row: 10 / 12;
+  grid-row: 9 / 11;
 }
 
 .meet-us {
-  grid-row: 13 / 14;
+  grid-row: 12 / 13;
 }
 
 .book-a-meeting {
-  grid-row: 15 / 16;
+  grid-row: 14 / 15;
 }
 
 .video-wrapper {
@@ -72,8 +72,8 @@ main {
 
 .video {
   position: absolute;
-  left: 3px;
-  top: 51.34%;
+  left: 0;
+  top: 51%;
   transform: translateY(calc(-50% - 2px));
-  width: 41vh;
+  width: 43vh;
 }
