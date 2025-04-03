@@ -8,15 +8,16 @@ html, body {
 
 main {
   height: 100vh;
-
   grid-template-columns: 9% 22.6% 8% 60.4%;
-  grid-template-rows: 11.4% /* coming-soon */ 7.6%
-  9% 9% /* logo */ 3.2%
-  4% /* stream-your-brand */ 2.6%
-  6.6% /* description */ 1.8%
-  16% 2% /* possible */ 2.7%
-  6.5% /* meet-us */
-  17.6%;
+  grid-template-rows:
+    11.4% /* coming-soon */ 7.6%
+    9% 9% /* logo */ 3.2%
+    4% /* stream-your-brand */ 2.6%
+    6.6% /* description */ 1.8%
+    16% 2% /* possible */ 2.7%
+    6.5% /* meet-us */ 2.7%
+    4.7% /* book a meeting */
+    10.2%;
 }
 
 .coming-soon,
@@ -24,7 +25,8 @@ main {
 .stream-your-brand,
 .description,
 .possible-badge,
-.meet-us {
+.meet-us,
+.book-a-meeting {
   grid-column: 2 / 2;
   text-align: center;
 }
@@ -53,6 +55,10 @@ main {
   grid-row: 13 / 14;
 }
 
+.book-a-meeting {
+  grid-row: 15 / 16;
+}
+
 .video-wrapper {
   grid-column: 4 / 5;
   grid-row: 4 / 11;
@@ -66,9 +72,8 @@ main {
 
 .video {
   position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 45.3vh;
-  border-radius: 6px;
+  left: 3px;
+  top: 51.34%;
+  transform: translateY(calc(-50% - 2px));
+  width: 41vh;
 }

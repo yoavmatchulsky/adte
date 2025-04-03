@@ -3,12 +3,16 @@
 }
 
 main {
-  /* height: 1000px; */
-  /* height: auto; */
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 90px 113px 13.8px 21.5px 33.7px 118px 24.8px 61px 68.6px 386px;
   text-align: center;
+  grid-template-columns: 1fr;
+  grid-template-rows:
+    90px /* coming-soon */
+    113px /* logo */ 13.8px
+    21.5px /* stream-your-brand */ 33.7px
+    118px /* possible */ 24.8px
+    71px /* meet-us */ 20.9px
+    39px /* book a meeting */ 43px
+    392px; /* video */
 }
 
 .coming-soon {
@@ -17,7 +21,6 @@ main {
 
 .coming-soon img {
   transform: translateX(50%);
-
 }
 
 .adte-logo {
@@ -36,24 +39,33 @@ main {
   grid-row: 8 / 9;
 }
 
-.video-wrapper {
+.book-a-meeting {
   grid-row: 10 / 11;
+}
+
+.video-wrapper {
+  grid-row: 12 / 13;
   position: relative;
+  overflow: hidden;
+}
+
+.video-wrapper img {
+  max-height: none;
+  max-width: 271px;
 }
 
 .video-container {
   position: absolute;
-  top: 0;
+  top: 8px;
   left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
+  transform: translateX(calc(-50% + -0.5px));
+  width: 150px;
   overflow: hidden;
-  height: 150px;
 }
 
 video {
   position: relative;
-  height: 150px;
+  height: 97px;
   left: 50%;
   transform: translateX(-50%);
 }
